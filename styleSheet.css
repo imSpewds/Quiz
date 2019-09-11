@@ -1,1 +1,21 @@
+#graph2 {
+	width: 10%;
+	height: 10%;
+}
 
+h3 {
+	margin-left:25px;
+}
+
+.button {
+	
+}
+body {
+	background-color: rgb(222,220,224);
+}
+#rectangle {
+	border-bottom: 5px solid black;
+}
+img {
+	border: 4px solid black;
+}
