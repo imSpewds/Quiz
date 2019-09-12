@@ -8,7 +8,12 @@ h3 {
 }
 
 .button {
-	
+	background-color: rgb(222,220,224);
+	width: 7%
+}
+
+.button:hover {
+	background-color: rgb(95, 141, 232);
 }
 body {
 	background-color: rgb(222,220,224);
