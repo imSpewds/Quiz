@@ -3,6 +3,9 @@
 	<head>
 		<title> Quiz </title>
 		<link rel="stylesheet" type="text/css" href="styleSheet.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 	
 	<body>
@@ -12,68 +15,68 @@
 			<h2> Factor the expressions completely in questions 1-4</h2>
 			<h2> 1) <var>x<sup>2</sup>+6x+9</var></h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="1" class="button" class="f">a) (x+9)(x+3)</h3>
-				<h3 class="1" class="button" class="t">b) (x+3)<sup>2</sup> </h3>
-				<h3 class="1" class="button" class="f">c) (x+2)(x+3)</h3>
-				<h3 class="1" class="button" class="f">d) 3(x+3)</h3>
+				<h3 id="1a" class="button" class="f">a) (x+9)(x+3)</h3>
+				<h3 id="1b" class="button" class="t">b) (x+3)<sup>2</sup> </h3>
+				<h3 id="1c" class="button" class="f">c) (x+2)(x+3)</h3>
+				<h3 id="1d" class="button" class="f">d) 3(x+3)</h3>
 			<h2> 2) <var>x<sup>2</sup>-2x-8</var></h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="2" class="button" class="t">a) (x-4)(x+2)</h3>
-				<h3 class="2" class="button" class="f">b) (x+2)<sup>2</sup></h3>
-				<h3 class="2" class="button" class="f">c) (x+4)(x-2)</h3>
-				<h3 class="2" class="button" class="f">d) (x-2)<sup>2</sup></h3>
+				<h3 id="2a" class="button" class="t">a) (x-4)(x+2)</h3>
+				<h3 id="2b" class="button" class="f">b) (x+2)<sup>2</sup></h3>
+				<h3 id="2c" class="button" class="f">c) (x+4)(x-2)</h3>
+				<h3 id="2d" class="button" class="f">d) (x-2)<sup>2</sup></h3>
 			<h2> 3) <var>5x<sup>2</sup>+18x+9</var></h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="3" class="button" class="f">a) 5(x+3)<sup>2</sup></h3>
-				<h3 class="3" class="button" class="t">b) (5x+3)(x+3)</h3>
-				<h3 class="3" class="button" class="f">c) 5(x+3)(x+6)</h3>
-				<h3 class="3" class="button" class="f">d) (5x+3)(x+6)</h3>
+				<h3 id="3a" class="button" class="f">a) 5(x+3)<sup>2</sup></h3>
+				<h3 id="3b" class="button" class="t">b) (5x+3)(x+3)</h3>
+				<h3 id="3c" class="button" class="f">c) 5(x+3)(x+6)</h3>
+				<h3 id="3d" class="button" class="f">d) (5x+3)(x+6)</h3>
 			<h2> 4) <var>3x<sup>2</sup>+3x-6</var></h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="4" class="button" class="f">a) (3x-3)(x+2)</h3>
-				<h3 class="4" class="button" class="f">b) 3(x+1)(x-2)</h3>
-				<h3 class="4" class="button" class="f">c) (3x+3)(x-2)</h3>
-				<h3 class="4" class="button" class="t">d) 3(x-1)(x+2)</h3>
+				<h3 id="4a" class="button" class="f">a) (3x-3)(x+2)</h3>
+				<h3 id="4b" class="button" class="f">b) 3(x+1)(x-2)</h3>
+				<h3 id="4c" class="button" class="f">c) (3x+3)(x-2)</h3>
+				<h3 id="4d" class="button" class="t">d) 3(x-1)(x+2)</h3>
 			<h2> 5) Find the value of <var>f(g(0))</var></h2>
 			<img src="graph1.png" alt="graph1">
 				<!-- Questions a, b, c d -->
-				<h3 class="5" class="button" class="f">a) 1</h3>
-				<h3 class="5" class="button" class="f">b) 2</h3>
-				<h3 class="5" class="button" class="t">c) 0</h3>
-				<h3 class="5" class="button" class="f">d) 3</h3>
+				<h3 id="5a" class="button" class="f">a) 1</h3>
+				<h3 id="5b" class="button" class="f">b) 2</h3>
+				<h3 id="5c" class="button" class="t">c) 0</h3>
+				<h3 id="5d" class="button" class="f">d) 3</h3>
 			<h2> 6) Find the value of <var>g(f(2))</var></h2>
 			<img src="graph1.png" alt="graph1">
 				<!-- Questions a, b, c d -->
-				<h3 class="6" class="button" class="t">a) 1</h3>
-				<h3 class="6" class="button" class="f">b) 2</h3>
-				<h3 class="6" class="button" class="f">c) 0</h3>
-				<h3 class="6" class="button" class="f">d) 3</h3>
+				<h3 id="6a" class="button" class="t">a) 1</h3>
+				<h3 id="6b" class="button" class="f">b) 2</h3>
+				<h3 id="6c" class="button" class="f">c) 0</h3>
+				<h3 id="6d" class="button" class="f">d) 3</h3>
 			<h2> Use <var>f(x)=2x<sup>2</sup>+6x+4</var> and <var>g(x)=5x+3</var> to evaluate the expression for questions 7-8</h2>
 			<h2> </h2>
 			<h2> 7) Simplify f(g(x)) Completely</h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="7" class="button" class="f">a) 2(5x+3)(5x+3)</h3>
-				<h3 class="7" class="button" class="f">b) 10x<sup>2</sup>30x+23</h3>
-				<h3 class="7" class="button" class="f">c) (10x+6)(5x+3)</h3>
-				<h3 class="7" class="button" class="t">d) 50x<sup>2</sup>+90x+40</h3>
+				<h3 id="7a" class="button" class="f">a) 2(5x+3)(5x+3)</h3>
+				<h3 id="7b" class="button" class="f">b) 10x<sup>2</sup>30x+23</h3>
+				<h3 id="7c" class="button" class="f">c) (10x+6)(5x+3)</h3>
+				<h3 id="7d" class="button" class="t">d) 50x<sup>2</sup>+90x+40</h3>
 			<h2> 8) Solve g(f(3)) </h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="8" class="button" class="f">a) 202</h3>
-				<h3 class="8" class="button" class="t">b) 203</h3>
-				<h3 class="8" class="button" class="f">c) 204</h3>
-				<h3 class="8" class="button" class="f">d) 205</h3>
+				<h3 id="8a" class="button" class="f">a) 202</h3>
+				<h3 id="8b" class="button" class="t">b) 203</h3>
+				<h3 id="8c" class="button" class="f">c) 204</h3>
+				<h3 id="8d" class="button" class="f">d) 205</h3>
 			<h2> 9) Factor <var>x<sup>3</sup>-6x<sup>2</sup>+12x-72</var> completely</h2>
 				<!-- Questions a, b, c d -->
-				<h3 class="9" class="button" class="f">a) (x-3)(x<sup>2</sup>+6)</h3>
-				<h3 class="9" class="button" class="f">b) (x+3)(x<sup>2</sup>-6)</h3>
-				<h3 class="9" class="button" class="t">c) (x-6)(x<sup>2</sup>+12)</h3>
-				<h3 class="9" class="button" class="f">d) (x+6)(x<sup>2</sup>-12)</h3>
+				<h3 id="9a" class="button" class="f">a) (x-3)(x<sup>2</sup>+6)</h3>
+				<h3 id="9b" class="button" class="f">b) (x+3)(x<sup>2</sup>-6)</h3>
+				<h3 id="9c" class="button" class="t">c) (x-6)(x<sup>2</sup>+12)</h3>
+				<h3 id="9d" class="button" class="f">d) (x+6)(x<sup>2</sup>-12)</h3>
 			<h2> 10) Which parent function represents the graph </h2>
 			<img id="graph2" src="graph2.png" alt="graph2">
 				<!-- Questions a, b, c d -->
-				<h3 class="10" class="button" class="f">a) f(x)= x<sup>2</sup></h3>
-				<h3 class="10" class="button" class="t">b) f(x)= <sup>1</sup>&frasl;<sub>x</sub></h3>
-				<h3 class="10" class="button" class="f">c) f(x)= x<sup>1</sup>&frasl;<sub>3</sub></h3>
-				<h3 class="10" class="button" class="f">d) f(x)= x<sup>3</sup></h3>
+				<h3 id="10a" class="button" class="f">a) f(x)= x<sup>2</sup></h3>
+				<h3 id="10b" class="button" class="t">b) f(x)= <sup>1</sup>&frasl;<sub>x</sub></h3>
+				<h3 id="10c" class="button" class="f">c) f(x)= x<sup>1</sup>&frasl;<sub>3</sub></h3>
+				<h3 id="10d" class="button" class="f">d) f(x)= x<sup>3</sup></h3>
 	</body>
 </html>

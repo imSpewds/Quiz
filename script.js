@@ -1,7 +1,5 @@
 $(document).ready(function() {
-	$("h3").click(function(){
-		$("h3.1").hide();
+	$("h3#1a").click(function(){
+		
 	});
 });
-
-LINK THIS FILE TO HTML
