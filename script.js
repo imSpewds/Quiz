@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("h3#1a").click(function(){
-		
+	$(".f1").click(function(){
+		$(".f1").toggle();
 	});
 });
