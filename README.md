@@ -1,3 +1,3 @@
 # Quiz
 Website: https://imspewds.github.io/Quiz/
-Repository: 
+Repository: https://github.com/imSpewds/Quiz
